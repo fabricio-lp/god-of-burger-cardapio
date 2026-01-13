@@ -1,0 +1,231 @@
+@font-face {
+  font-family: Greek Rubone;
+  src: url("../fonts/Greek-Rubone.otf");
+}
+
+@font-face {
+  font-family: Spartacus;
+  src: url("../fonts/Spartacus.ttf");
+}
+
+:root {
+  --accent: #cfb387;
+  --muted: #e6dcc6; /* warmer beige/off-white for descriptions */
+  --card-bg: #282929;
+  --surface: #171717;
+  --bg: #1b1b1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", "PT Sans", sans-serif;
+  color: var(--accent);
+  background-color: var(--bg);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:focus,
+button:focus {
+  outline: 3px solid rgba(230, 226, 217, 0.12);
+  outline-offset: 3px;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #e6e2d9;
+}
+
+.item-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #e6e2d9;
+}
+
+.item-description_2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #e6e2d9;
+}
+
+.item-title {
+  font-family: "Greek Rubone", "Spartacus", "Greek-Freak", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  color: #cfb387;
+  font-size: 1.3rem;
+  line-height: 1.08;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+}
+
+.btn-default {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; /* heavier for price emphasis */
+  font-size: 1.16rem; /* slightly larger */
+  line-height: 1.3;
+}
+body {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section title styling */
+.beverages_title {
+  font-family: "Greek Rubone", sans-serif;
+  margin-top: 32px;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--accent);
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(207, 180, 135, 0.12);
+  width: 100%;
+}
+
+/* Improve link and button focus states */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(230, 226, 217, 0.12);
+  outline-offset: 3px;
+}
+
+#nav_logo {
+  width: 15%;
+  max-width: 160px;
+}
+
+@media screen and (min-width: 1171px) {
+  #nav_list {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    margin-top: 0;
+  }
+
+  #nav_logo {
+    width: auto;
+    max-width: 60px;
+    height: 60px;
+    object-fit: contain;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a48147;
+  border-radius: 4px;
+  color: #29282d;
+  padding: 6px 12px; /* increased for better fit */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 140ms ease;
+  margin-top: 8px;
+}
+
+.btn-contact {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cta_buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 7px;
+}
+
+#cta_buttons a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.btn-contact i {
+  font-size: 1.4rem;
+  color: antiquewhite;
+}
+
+.btn-default:hover {
+  background-color: #171818;
+  color: antiquewhite;
+}
+
+.btn-contact:hover i {
+  color: antiquewhite;
+}
+
+#content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  background-color: #171717;
+  width: 100%;
+  padding: 30px 21px 1px;
+  margin-top: auto;
+}
+
+#about .title {
+  font-size: x-large;
+}
+#about .description {
+  font-size: smaller;
+  margin-top: 5px;
+}
+#about .cta-inner {
+  color: #cfb387;
+  font-size: small;
+  margin-top: -8px;
+}
+
+#about #banner {
+  min-height: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #content {
+    padding-top: 70px;
+  }
+}
