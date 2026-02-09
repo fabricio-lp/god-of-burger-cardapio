@@ -67,26 +67,6 @@ function generateMenu(data) {
     }
   });
 
-  const adicionaisData = [
-    { "Nome do Item": "Hambúrguer 140g", "Preço (R$)": "6.99" },
-    { "Nome do Item": "Bacon", "Preço (R$)": "3.99" },
-    { "Nome do Item": "Ovo", "Preço (R$)": "0.99" },
-    { "Nome do Item": "Cheddar", "Preço (R$)": "3.99" },
-    { "Nome do Item": "Muçarela", "Preço (R$)": "3.99" },
-    { "Nome do Item": "Onion rings", "Preço (R$)": "3.99" },
-    { "Nome do Item": "Cebola caramelizada", "Preço (R$)": "2.99" },
-    { "Nome do Item": "Cebola roxa", "Preço (R$)": "0.99" },
-    { "Nome do Item": "Alface", "Preço (R$)": "0.99" },
-    { "Nome do Item": "Tomate", "Preço (R$)": "0.99" },
-    { "Nome do Item": "Maionese", "Preço (R$)": "2.99" },
-    { "Nome do Item": "Barbecue", "Preço (R$)": "2.99" },
-    { "Nome do Item": "Molho picante", "Preço (R$)": "2.99" },
-    { "Nome do Item": "Sachê ketchup", "Preço (R$)": "0.25" },
-    { "Nome do Item": "Sachê maionese", "Preço (R$)": "0.25" },
-  ];
-
-  categories["ADICIONAIS"] = adicionaisData;
-
   const categoryCount = Object.keys(categories).length;
   if (categoryCount === 0) {
     menuSection.html(
